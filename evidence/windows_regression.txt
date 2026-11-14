@@ -1,0 +1,17 @@
+sssssssssss............................................................. [ 31%]
+........................................................................ [ 62%]
+........................................................................ [ 93%]
+................                                                         [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\hardware\test_pi_hardware.py:25: set LB_HARDWARE=1 on the Pi
+SKIPPED [1] tests\hardware\test_pi_hardware.py:30: set LB_HARDWARE=1 on the Pi
+SKIPPED [1] tests\hardware\test_pi_hardware.py:36: set LB_HARDWARE=1 on the Pi
+SKIPPED [1] tests\hardware\test_pi_hardware.py:42: set LB_HARDWARE=1 on the Pi
+SKIPPED [1] tests\hardware\test_webcam_capture.py:7: set LB_OCR_HARDWARE=1 on the Pi with a USB webcam
+SKIPPED [1] tests\integration\test_executorch_runtime.py:34: set LB_ET_TEST_DIR (see scripts/export_tiny_test_model.sh)
+SKIPPED [1] tests\integration\test_executorch_runtime.py:39: set LB_ET_TEST_DIR (see scripts/export_tiny_test_model.sh)
+SKIPPED [1] tests\integration\test_executorch_runtime.py:45: set LB_ET_TEST_DIR (see scripts/export_tiny_test_model.sh)
+SKIPPED [1] tests\integration\test_executorch_runtime.py:49: set LB_ET_TEST_DIR (see scripts/export_tiny_test_model.sh)
+SKIPPED [1] tests\integration\test_executorch_runtime.py:58: set LB_ET_TEST_DIR (see scripts/export_tiny_test_model.sh)
+SKIPPED [1] tests\integration\test_executorch_runtime.py:69: set LB_ET_TEST_DIR (see scripts/export_tiny_test_model.sh)
+221 passed, 11 skipped in 8.15s

@@ -1,0 +1,355 @@
+{
+  "passage_sha256": "0e3d9d0319d4299e41d3c6a430222d73836bed36ae5ac773c9c8f9065c6c01a1",
+  "supported_knowledge_types": [
+    "definition",
+    "cause_effect",
+    "quantitative"
+  ],
+  "extension_types_not_extracted": [
+    "process_sequence",
+    "classification_comparison",
+    "experiment_variables"
+  ],
+  "type_counts": {
+    "definition": 4,
+    "quantitative": 4,
+    "cause_effect": 1
+  },
+  "sentences": [
+    {
+      "sid": "S1",
+      "index": 1,
+      "text": "An object is said to be in motion when its position changes with time."
+    },
+    {
+      "sid": "S2",
+      "index": 2,
+      "text": "The distance an object covers in a unit of time is called its speed."
+    },
+    {
+      "sid": "S3",
+      "index": 3,
+      "text": "Speed is calculated by dividing the total distance covered by the total time taken."
+    },
+    {
+      "sid": "S4",
+      "index": 4,
+      "text": "The basic unit of speed is metre per second (m/s), but speed on roads is usually given in kilometres per hour (km/h)."
+    },
+    {
+      "sid": "S5",
+      "index": 5,
+      "text": "For example, a bus that covers 120 kilometres in 2 hours has an average speed of 60 km/h."
+    },
+    {
+      "sid": "S6",
+      "index": 6,
+      "text": "If the time taken stays the same, a vehicle that covers a greater distance must have a higher speed."
+    },
+    {
+      "sid": "S7",
+      "index": 7,
+      "text": "If two vehicles cover the same distance, the one that takes less time is faster."
+    },
+    {
+      "sid": "S8",
+      "index": 8,
+      "text": "Most vehicles do not move at a constant speed; they speed up and slow down along the way."
+    },
+    {
+      "sid": "S9",
+      "index": 9,
+      "text": "That is why we usually talk about average speed."
+    },
+    {
+      "sid": "S10",
+      "index": 10,
+      "text": "A speedometer in a vehicle shows its speed at that moment, while an odometer measures the total distance it has travelled."
+    },
+    {
+      "sid": "S11",
+      "index": 11,
+      "text": "Knowing speed helps us plan journeys and estimate how long they will take."
+    }
+  ],
+  "sentence_types": {
+    "S1": [
+      "definition"
+    ],
+    "S2": [
+      "definition"
+    ],
+    "S3": [
+      "quantitative:formula"
+    ],
+    "S4": [
+      "unit_fact"
+    ],
+    "S5": [
+      "quantitative:worked_example"
+    ],
+    "S6": [
+      "quantitative:relationship"
+    ],
+    "S7": [
+      "quantitative:relationship"
+    ],
+    "S8": [
+      "cause_effect:cause"
+    ],
+    "S9": [
+      "cause_effect:effect"
+    ],
+    "S10": [
+      "definition",
+      "definition"
+    ],
+    "S11": []
+  },
+  "definitions": [
+    {
+      "term": "motion",
+      "meaning": "an object's position changes with time",
+      "short_meaning": "An object's position changes with time",
+      "sid": "S1",
+      "category": "state",
+      "pair_term": null,
+      "verb": null
+    },
+    {
+      "term": "speed",
+      "meaning": "distance an object covers in a unit of time",
+      "short_meaning": "Distance covered in a unit of time",
+      "sid": "S2",
+      "category": "quantity",
+      "pair_term": null,
+      "verb": null
+    },
+    {
+      "term": "speedometer",
+      "meaning": "the vehicle's speed at that moment",
+      "short_meaning": "Speed at that moment",
+      "sid": "S10",
+      "category": "instrument",
+      "pair_term": "odometer",
+      "verb": "shows"
+    },
+    {
+      "term": "odometer",
+      "meaning": "the total distance the vehicle has travelled",
+      "short_meaning": "Total distance travelled",
+      "sid": "S10",
+      "category": "instrument",
+      "pair_term": "speedometer",
+      "verb": "measures"
+    }
+  ],
+  "formulas": [
+    {
+      "sid": "S3",
+      "key": "speed",
+      "text": "speed = distance ÷ time"
+    }
+  ],
+  "worked_examples": [
+    {
+      "sid": "S5",
+      "formula_key": "speed",
+      "numerator": {
+        "value": 120.0,
+        "unit": "km",
+        "dimension": "length"
+      },
+      "denominator": {
+        "value": 2.0,
+        "unit": "h",
+        "dimension": "time"
+      },
+      "stated": {
+        "value": 60.0,
+        "unit": "km/h",
+        "dimension": "speed"
+      },
+      "computed": "60 km/h",
+      "verified": true
+    }
+  ],
+  "relationships": [
+    {
+      "sid": "S6",
+      "formula_key": "speed",
+      "subject": "vehicle",
+      "relation": "speed",
+      "direction": "increase",
+      "condition": "same time",
+      "changed_variable": "distance",
+      "change": "increase",
+      "result": "greater distance -> higher speed",
+      "consistent_with_formula": true
+    },
+    {
+      "sid": "S7",
+      "formula_key": "speed",
+      "subject": "vehicle",
+      "relation": "speed",
+      "direction": "increase",
+      "condition": "same distance",
+      "changed_variable": "time",
+      "change": "decrease",
+      "result": "less time -> faster",
+      "consistent_with_formula": true
+    }
+  ],
+  "cause_effects": [
+    {
+      "cause_sid": "S8",
+      "effect_sid": "S9",
+      "cause": "Most vehicles do not move at a constant speed; they speed up and slow down along the way",
+      "effect": "we usually talk about average speed"
+    }
+  ],
+  "unit_facts": [
+    {
+      "sid": "S4",
+      "unit": "m/s",
+      "meaning": "metre per second, the basic unit of speed"
+    },
+    {
+      "sid": "S4",
+      "unit": "km/h",
+      "meaning": "kilometres per hour, a unit of speed used on roads"
+    }
+  ],
+  "quantities": [
+    {
+      "sid": "S5",
+      "surface": "120 kilometres",
+      "value": 120.0,
+      "unit": "km",
+      "dimension": "length"
+    },
+    {
+      "sid": "S5",
+      "surface": "2 hours",
+      "value": 2.0,
+      "unit": "h",
+      "dimension": "time"
+    },
+    {
+      "sid": "S5",
+      "surface": "60 km/h",
+      "value": 60.0,
+      "unit": "km/h",
+      "dimension": "speed"
+    }
+  ],
+  "compound_terms": [
+    {
+      "term": "average speed",
+      "sid": "S5",
+      "meaning": "total distance ÷ total time",
+      "all_sids": [
+        "S5",
+        "S9"
+      ]
+    }
+  ],
+  "unsupported": [
+    {
+      "sid": "S11",
+      "text": "Knowing speed helps us plan journeys and estimate how long they will take.",
+      "reason": "no supported definition / cause-effect / quantitative pattern"
+    }
+  ],
+  "concepts": [
+    {
+      "cid": "C1",
+      "label": "speed",
+      "knowledge_type": "definition",
+      "sids": [
+        "S2"
+      ],
+      "ref": {
+        "definition": "speed"
+      }
+    },
+    {
+      "cid": "C2",
+      "label": "odometer",
+      "knowledge_type": "definition",
+      "sids": [
+        "S10"
+      ],
+      "ref": {
+        "definition": "odometer"
+      }
+    },
+    {
+      "cid": "C3",
+      "label": "speed = distance ÷ time",
+      "knowledge_type": "quantitative",
+      "sids": [
+        "S3"
+      ],
+      "ref": {
+        "formula": "speed"
+      }
+    },
+    {
+      "cid": "C4",
+      "label": "same time, greater distance -> higher speed",
+      "knowledge_type": "quantitative",
+      "sids": [
+        "S6"
+      ],
+      "ref": {
+        "relationship": "S6"
+      }
+    },
+    {
+      "cid": "C5",
+      "label": "same distance, less time -> faster",
+      "knowledge_type": "quantitative",
+      "sids": [
+        "S7"
+      ],
+      "ref": {
+        "relationship": "S7"
+      }
+    },
+    {
+      "cid": "C6",
+      "label": "speedometer",
+      "knowledge_type": "definition",
+      "sids": [
+        "S10"
+      ],
+      "ref": {
+        "definition": "speedometer"
+      }
+    },
+    {
+      "cid": "C7",
+      "label": "motion",
+      "knowledge_type": "definition",
+      "sids": [
+        "S1"
+      ],
+      "ref": {
+        "definition": "motion"
+      }
+    },
+    {
+      "cid": "C8",
+      "label": "we usually talk about average speed (because: Most vehicles do not move at a constant speed; they speed up and slow down along the way)",
+      "knowledge_type": "cause_effect",
+      "sids": [
+        "S8",
+        "S9"
+      ],
+      "ref": {
+        "cause_effect": "S9"
+      }
+    }
+  ]
+}

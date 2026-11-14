@@ -1,0 +1,24 @@
+# Permitted synonyms used by the key-term coverage check.
+# Keys are canonical registry terms (lower case). Matching is case-insensitive.
+"speed = distance ÷ time":
+  - "speed = distance / time"
+  - "distance ÷ time"
+  - "distance / time"
+  - "distance divided by time"
+  - "divide the distance by the time"
+  - "dividing the total distance covered by the total time taken"
+  - "dividing distance by time"
+"km/h":
+  - "kilometres per hour"
+  - "kilometers per hour"
+  - "kilometre per hour"
+  - "kmph"
+"m/s":
+  - "metre per second"
+  - "metres per second"
+  - "meter per second"
+  - "meters per second"
+"average speed": []
+"speed": []
+"odometer": []
+"speedometer": []

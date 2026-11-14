@@ -1,0 +1,41 @@
+{
+  "description": "Third demo learner 'Meena' (speed passage): multiplies distance by time (540) like Priya, so the class heatmap shows a shared misconception.",
+  "answers": {
+    "P1": {
+      "select": "correct",
+      "certainty": 2
+    },
+    "P2": {
+      "select": "error:term_confusion",
+      "certainty": 2
+    },
+    "P3": {
+      "select": "error:reversed_relation",
+      "certainty": 2
+    },
+    "Q3": {
+      "select": "correct",
+      "certainty": 2
+    },
+    "Q4": {
+      "select": "correct",
+      "certainty": 2
+    },
+    "Q1": {
+      "select": "correct",
+      "certainty": 3
+    },
+    "Q2": {
+      "value": "540",
+      "certainty": 2
+    },
+    "Q2b": {
+      "value": "12",
+      "certainty": 2
+    },
+    "T1": {
+      "value": "4",
+      "certainty": 2
+    }
+  }
+}

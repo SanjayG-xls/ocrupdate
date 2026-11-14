@@ -1,0 +1,19 @@
+{
+  "backend": "executorch_runner",
+  "pte_path": {
+    "path": "C:\\Users\\Sanjay\\Desktop\\level_bridge_stem\\models\\Qwen2.5-0.5B-Instruct-8da4w-gptq-2k.pte",
+    "exists": true,
+    "size_mb": 417.5,
+    "sha256": "dcd6a99816265a7257ee79d1740cbd9df09544ec061cc95b7278f8c5391cef18",
+    "sha256_matches_config": "no checksum recorded"
+  },
+  "tokenizer_path": {
+    "path": "C:\\Users\\Sanjay\\Desktop\\level_bridge_stem\\models\\tokenizer.json",
+    "exists": true,
+    "size_mb": 7.03
+  },
+  "load": {
+    "ok": false,
+    "error": "ExecuTorch LLM runner not importable: No module named 'executorch'"
+  }
+}

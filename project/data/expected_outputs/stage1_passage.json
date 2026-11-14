@@ -1,0 +1,63 @@
+{
+  "source": "data/passages/speed_passage.txt",
+  "word_count": 177,
+  "sha256": "0e3d9d0319d4299e41d3c6a430222d73836bed36ae5ac773c9c8f9065c6c01a1",
+  "warnings": [],
+  "sentences": [
+    {
+      "sid": "S1",
+      "index": 1,
+      "text": "An object is said to be in motion when its position changes with time."
+    },
+    {
+      "sid": "S2",
+      "index": 2,
+      "text": "The distance an object covers in a unit of time is called its speed."
+    },
+    {
+      "sid": "S3",
+      "index": 3,
+      "text": "Speed is calculated by dividing the total distance covered by the total time taken."
+    },
+    {
+      "sid": "S4",
+      "index": 4,
+      "text": "The basic unit of speed is metre per second (m/s), but speed on roads is usually given in kilometres per hour (km/h)."
+    },
+    {
+      "sid": "S5",
+      "index": 5,
+      "text": "For example, a bus that covers 120 kilometres in 2 hours has an average speed of 60 km/h."
+    },
+    {
+      "sid": "S6",
+      "index": 6,
+      "text": "If the time taken stays the same, a vehicle that covers a greater distance must have a higher speed."
+    },
+    {
+      "sid": "S7",
+      "index": 7,
+      "text": "If two vehicles cover the same distance, the one that takes less time is faster."
+    },
+    {
+      "sid": "S8",
+      "index": 8,
+      "text": "Most vehicles do not move at a constant speed; they speed up and slow down along the way."
+    },
+    {
+      "sid": "S9",
+      "index": 9,
+      "text": "That is why we usually talk about average speed."
+    },
+    {
+      "sid": "S10",
+      "index": 10,
+      "text": "A speedometer in a vehicle shows its speed at that moment, while an odometer measures the total distance it has travelled."
+    },
+    {
+      "sid": "S11",
+      "index": 11,
+      "text": "Knowing speed helps us plan journeys and estimate how long they will take."
+    }
+  ]
+}

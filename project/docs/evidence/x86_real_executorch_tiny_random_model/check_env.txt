@@ -1,0 +1,20 @@
+{
+  "python": "3.13.18",
+  "machine": "x86_64",
+  "system": "Linux",
+  "level_bridge": "0.1.0",
+  "packages": {
+    "PyYAML": "6.0.3",
+    "pytest": "9.2.0",
+    "torch": "2.15.0",
+    "torchao": "0.18.0",
+    "pytorch-tokenizers": "1.6.0",
+    "transformers": "4.57.1",
+    "executorch": "1.4.0"
+  },
+  "executorch_llm_runner_importable": true,
+  "executorch_version_matches_pin": true,
+  "required_ok": true
+}
+
+written: outputs/environment_report.json

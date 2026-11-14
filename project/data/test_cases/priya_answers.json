@@ -1,0 +1,17 @@
+{
+  "description": "Report §4 demonstration learner 'Priya'. Answers are written by intent (not option letter).",
+  "expected": {"placement": "1/3", "start_rung": 1, "rung_path": ["L1", "L2", "L3"],
+               "assessment_credits": 25, "assessment_max": 36, "recovery_credits": 3,
+               "total_earned": 28, "cbm_total": 6, "cbm_max": 18},
+  "answers": {
+    "P1": {"select": "correct", "certainty": 2},
+    "P2": {"select": "error:term_confusion", "certainty": 2},
+    "P3": {"select": "error:reversed_relation", "certainty": 2},
+    "Q1": {"select": "correct", "certainty": 3},
+    "Q2": {"value": "540 km/h", "certainty": 3},
+    "Q2b": {"value": "12 km/h", "certainty": 2},
+    "Q3": {"select": "correct", "certainty": 1},
+    "Q4": {"select": "correct", "certainty": 3},
+    "T1": {"value": "4 km/h", "certainty": 3}
+  }
+}

@@ -1,0 +1,7 @@
+--- run 0  ok=True  wall=4.606s  ttft_ms=1113.0  prompt_tokens=5  generated_tokens=15
+!!!!!!!!!!!!!!!!
+--- run 1  ok=True  wall=0.017s  ttft_ms=1.0  prompt_tokens=5  generated_tokens=15
+!!!!!!!!!!!!!!!!
+--- run 2  ok=True  wall=0.017s  ttft_ms=1.0  prompt_tokens=5  generated_tokens=15
+!!!!!!!!!!!!!!!!
+written: outputs/inference_20261105_010257.json

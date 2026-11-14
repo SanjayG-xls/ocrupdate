@@ -1,0 +1,29 @@
+{
+  "platform": "Windows-10-10.0.26200-SP0",
+  "machine": "AMD64",
+  "packages": {
+    "Flask": "3.1.2",
+    "opencv-python-headless": "4.12.0.88",
+    "pytesseract": "0.3.13",
+    "Pillow": "11.3.0",
+    "executorch": "unavailable"
+  },
+  "artifacts": {
+    "Qwen2.5-0.5B-Instruct-8da4w-gptq-2k.pte": {
+      "bytes": 417495296,
+      "sha256": "dcd6a99816265a7257ee79d1740cbd9df09544ec061cc95b7278f8c5391cef18"
+    },
+    "arm_int8_backup.pte": {
+      "bytes": 769370752,
+      "sha256": "e6f15ebf0323fdc01fb5dc22c973d1cf21f873289d49744bf58021b842e55dd5"
+    },
+    "tokenizer.json": {
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    }
+  },
+  "tesseract_executable": null,
+  "hardware_tested": false,
+  "http_home_status": 200,
+  "http_static_status": 200
+}

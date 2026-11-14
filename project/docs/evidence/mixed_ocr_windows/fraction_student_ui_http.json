@@ -1,0 +1,55 @@
+{
+  "backend": "pix2tex (CPU, local)",
+  "blocks": [
+    {
+      "bbox": [
+        82.67,
+        3.0,
+        152.67,
+        38.67
+      ],
+      "column": 0,
+      "id": "block_0",
+      "kind": "math",
+      "latex": "{\\frac{a}{x-a}}+{\\frac{b}{x-b}}\\;=\\;{\\frac{2c}{x-c}}",
+      "ocr_confidence": 17.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.365,
+      "review_required": true,
+      "row": 0,
+      "text": "oe = ="
+    },
+    {
+      "bbox": [
+        5.33,
+        66.0,
+        229.67,
+        43.33
+      ],
+      "column": 0,
+      "id": "block_1",
+      "kind": "math",
+      "latex": "\\begin{array}{r l}{\\Omega={}}&{{}{\\frac{a(x-b)+b(x-a)}{(x-a)(x-b)}}\\,=\\,{\\frac{2c}{x-c}}}\\end{array}",
+      "ocr_confidence": 0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.718,
+      "review_required": true,
+      "row": 1,
+      "text": "",
+      "warning": "This equation needs checking. The reader may have confused a symbol or the fraction layout."
+    }
+  ],
+  "columns": 1,
+  "combined_text": "${\\frac{a}{x-a}}+{\\frac{b}{x-b}}\\;=\\;{\\frac{2c}{x-c}}$\n$\\begin{array}{r l}{\\Omega={}}&{{}{\\frac{a(x-b)+b(x-a)}{(x-a)(x-b)}}\\,=\\,{\\frac{2c}{x-c}}}\\end{array}$",
+  "duration_s": 6.947,
+  "equation_candidates": 2,
+  "height": 115,
+  "model_load_s": 4.969,
+  "recognised_equations": 2,
+  "recognition_s": 1.103,
+  "review_required": true,
+  "warnings": [
+    "Automatic layout and equation recognition can miss or misclassify content. Review every block against the photo."
+  ],
+  "width": 244
+}

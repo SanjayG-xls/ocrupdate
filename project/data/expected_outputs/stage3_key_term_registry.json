@@ -1,0 +1,81 @@
+{
+  "count": 7,
+  "required_count": 7,
+  "policy": "quantities, instruments, units, formulas and compound quantities are required; state definitions stay in the knowledge map only",
+  "entries": [
+    {
+      "canonical": "speed",
+      "sid": "S2",
+      "meaning": "distance an object covers in a unit of time",
+      "preservation": "required",
+      "category": "quantity",
+      "synonyms": []
+    },
+    {
+      "canonical": "speed = distance ÷ time",
+      "sid": "S3",
+      "meaning": "how speed is calculated",
+      "preservation": "required",
+      "category": "formula",
+      "synonyms": [
+        "speed = distance / time",
+        "distance ÷ time",
+        "distance / time",
+        "distance divided by time",
+        "divide the distance by the time",
+        "dividing the total distance covered by the total time taken",
+        "dividing distance by time"
+      ]
+    },
+    {
+      "canonical": "m/s",
+      "sid": "S4",
+      "meaning": "metre per second, the basic unit of speed",
+      "preservation": "required",
+      "category": "unit",
+      "synonyms": [
+        "metre per second",
+        "metres per second",
+        "meter per second",
+        "meters per second"
+      ]
+    },
+    {
+      "canonical": "km/h",
+      "sid": "S4",
+      "meaning": "kilometres per hour, a unit of speed used on roads",
+      "preservation": "required",
+      "category": "unit",
+      "synonyms": [
+        "kilometres per hour",
+        "kilometers per hour",
+        "kilometre per hour",
+        "kmph"
+      ]
+    },
+    {
+      "canonical": "average speed",
+      "sid": "S5",
+      "meaning": "total distance ÷ total time",
+      "preservation": "required",
+      "category": "compound",
+      "synonyms": []
+    },
+    {
+      "canonical": "speedometer",
+      "sid": "S10",
+      "meaning": "the vehicle's speed at that moment",
+      "preservation": "required",
+      "category": "instrument",
+      "synonyms": []
+    },
+    {
+      "canonical": "odometer",
+      "sid": "S10",
+      "meaning": "the total distance the vehicle has travelled",
+      "preservation": "required",
+      "category": "instrument",
+      "synonyms": []
+    }
+  ]
+}

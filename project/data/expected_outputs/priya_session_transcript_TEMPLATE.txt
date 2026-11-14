@@ -1,0 +1,90 @@
+==============================================================================
+LEVEL BRIDGE STEM  run expected_template   learner: scripted answers (priya_answers.json)
+Backend: template  (LLM inference: NO - deterministic templates only)
+   summary  source=template   validated=True  attempts=0
+   l1       source=template   validated=True  attempts=0
+   l2       source=template   validated=True  attempts=0
+   l3       source=original   validated=True  attempts=0
+   question stems: templates
+   LLM outputs accepted after validation: 0
+Passage: 177 words · registry 7 terms · core types {'definition': 4, 'quantitative': 4, 'cause_effect': 1}
+==============================================================================
+  P1 [literal] What is the basic unit of speed?  -> C ✓
+  P2 [word_in_context] In sentence S10, what does "odometer" mean?  -> A ✗
+  P3 [inference] Asha and Ravi both travel 10 km. Asha takes 30 min and Ravi takes 40 min. Who is faster?  -> B ✗
+PLACEMENT  1/3 -> R1: start at L1
+--- L1 explanation (template) ---
+    An object is said to be in motion when its position changes with time.
+    Speed tells us the distance an object covers in a unit of time.
+    Speed = distance ÷ time.
+    To find speed, divide the distance by the time.
+    m/s means metre per second, the basic unit of speed.
+    km/h means kilometres per hour, a unit of speed used on roads.
+    Example: a bus covers 120 km in 2 h.
+    120 ÷ 2 = 60.
+    So its average speed is 60 km/h.
+    If the time is the same, more distance means higher speed.
+    If the distance is the same, less time means higher speed.
+    Most vehicles do not move at a constant speed.
+    So we usually talk about average speed.
+    A speedometer shows the vehicle's speed at that moment.
+    An odometer measures the total distance the vehicle has travelled.
+Q1 [L1 · RECALL · definition · C1] What is speed?
+      A) Total distance travelled   B) Speed at that moment   C) An object's position changes with time   D) Distance covered in a unit of time
+      answer D · certainty 3 -> ✓ PROVISIONAL   credits +3  CBM +3
+Q2 [L1 · APPLY · quantitative · C3] A train covers 180 km in 3 h. What is the average speed in km/h? (type a number)
+      answer 540 km/h · certainty 3 -> ✗ FRAGILE [wrong_operation_multiply]   credits +0  CBM -6
+   REPAIR (template, 0.0 ms)
+      Your answer 540 matches the error "wrong operation multiply".
+      180 km × 3 h = 540 km·h, which is not a unit of speed.
+      Use the rule from S3: speed = distance ÷ time.
+      speed = 180 km ÷ 3 h  ->  60 km/h.
+   2ND CHANCE Q2b: A cyclist rides 24 km in 2 h. What is the average speed in km/h? (type a number)
+      answer 12 km/h · certainty 2 -> ✓ REPAIRED   recovery +3  CBM +2
+R3  all L1 items resolved -> climb to L2
+--- L2 explanation (template) ---
+    Speed is the distance an object covers in a unit of time. It is calculated as speed = distance ÷
+    time, and is measured in m/s or km/h. For example, a bus that covers 120 km in 2 h has an
+    average speed of 60 km/h. If the time is the same, more distance means higher speed. If the
+    distance is the same, less time means higher speed. Most vehicles do not move at a constant
+    speed, so we usually talk about average speed. A speedometer shows the vehicle's speed at that
+    moment; an odometer measures the total distance the vehicle has travelled.
+Q3 [L2 · RECALL · definition · C2] What does an odometer measure?
+      A) Distance covered in a unit of time   B) An object's position changes with time   C) Speed at that moment   D) Total distance travelled
+      answer D · certainty 1 -> ✓ PROVISIONAL   credits +1  CBM +1
+Q4 [L2 · APPLY · quantitative · C4] In 1 h, bus X covers 50 km and bus Y covers 65 km. Which has the higher average speed?
+      A) Bus X   B) Bus Y   C) It cannot be found from this information   D) Both have the same speed
+      answer B · certainty 3 -> ✓ PROVISIONAL   credits +9  CBM +3
+R3  all L2 items resolved -> climb to L3
+--- L3 explanation (original) ---
+    An object is said to be in motion when its position changes with time. The distance an object
+    covers in a unit of time is called its speed. Speed is calculated by dividing the total distance
+    covered by the total time taken. The basic unit of speed is metre per second (m/s), but speed on
+    roads is usually given in kilometres per hour (km/h). For example, a bus that covers 120
+    kilometres in 2 hours has an average speed of 60 km/h. If the time taken stays the same, a
+    vehicle that covers a greater distance must have a higher speed. If two vehicles cover the same
+    distance, the one that takes less time is faster. Most vehicles do not move at a constant speed;
+    they speed up and slow down along the way. That is why we usually talk about average speed. A
+    speedometer in a vehicle shows its speed at that moment, while an odometer measures the total
+    distance it has travelled. Knowing speed helps us plan journeys and estimate how long they will
+    take.
+R4  bridge: L3 items resolved
+BRIDGE  S3, S4 exactly as printed (verbatim=True):
+    "Speed is calculated by dividing the total distance covered by the total time taken. The basic
+    unit of speed is metre per second (m/s), but speed on roads is usually given in kilometres per
+    hour (km/h)."
+T1 [L3 · TRANSFER · quantitative · C3] Meena walks 2 km to school in 30 min. What is the average speed in km/h? (type a number)
+      answer 4 km/h · certainty 3 -> ✓ TRANSFERRED   credits +12  CBM +3
+
+LEARNING REPORT
+   backend: template   LLM inference: NO (templates)   LLM outputs accepted: 0
+   path: L1 -> L2 -> L3   end: bridge check completed
+   C1  speed                                          Provisional
+   C2  odometer                                       Provisional  (low certainty on Q3: reread S10)
+   C3  speed = distance ÷ time                        Transferred
+   C4  same time, greater distance -> higher speed    Provisional
+   C5  same distance, less time -> faster             not assessed
+   C6  speedometer                                    not assessed
+   C7  motion                                         not assessed
+   C8  we usually talk about average speed (because:… not assessed
+   Assessment 25 / 36 | Recovery +3 (outside maximum) | Total earned 28 | CBM +6 / 18

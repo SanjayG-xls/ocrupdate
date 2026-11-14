@@ -1,0 +1,14 @@
+{
+  "description": "Priya on a second passage (density). She repeats the wrong-operation error (mass × volume), so learner memory reports a recurring pattern across passages.",
+  "answers": {
+    "P1": {"select": "correct", "certainty": 2},
+    "P2": {"select": "error:term_confusion", "certainty": 2},
+    "P3": {"select": "error:reversed_relation", "certainty": 2},
+    "Q1": {"select": "correct", "certainty": 3},
+    "Q2": {"value": "108000", "certainty": 3},
+    "Q2b": {"value": "2.5 g/cm3", "certainty": 2},
+    "Q3": {"select": "correct", "certainty": 2},
+    "Q4": {"select": "correct", "certainty": 3},
+    "T1": {"value": "0.6 g/cm3", "certainty": 3}
+  }
+}

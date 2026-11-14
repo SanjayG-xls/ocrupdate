@@ -1,0 +1,11 @@
+backend: executorch_runner
+executorch_runner:
+  pte_path: "models/test/tiny_random_llama.pte"
+  tokenizer_path: "models/test/tokenizer.json"
+  data_path: null
+  expected_executorch_version: "1.4.0"
+generation:
+  temperature: 0.0
+  prompt_format: "raw"
+  timeout_s: 60
+  system_prompt: "test"

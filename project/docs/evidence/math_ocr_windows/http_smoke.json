@@ -1,0 +1,13 @@
+{
+  "backend": "pix2tex (CPU, local)",
+  "crop": [
+    205,
+    332,
+    61,
+    40
+  ],
+  "latex": "\\rho={\\frac{m}{V}}",
+  "model_load_s": 4.648,
+  "recognition_s": 0.155,
+  "review_required": true
+}

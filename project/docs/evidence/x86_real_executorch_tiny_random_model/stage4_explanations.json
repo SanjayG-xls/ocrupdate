@@ -1,0 +1,389 @@
+{
+  "summary": {
+    "kind": "summary",
+    "text": "Speed is the distance an object covers in a unit of time. It is calculated as speed = distance ÷ time and measured in units such as m/s or km/h. If the time is the same, more distance means higher speed. For example, 120 km in 2 h gives 60 km/h.",
+    "source": "template",
+    "validated": true,
+    "validation": {
+      "kind": "summary",
+      "passed": true,
+      "checks": [
+        {
+          "name": "well_formed",
+          "passed": true,
+          "details": "",
+          "severity": "error"
+        },
+        {
+          "name": "key_term_coverage",
+          "passed": true,
+          "details": "4/7 required terms; missing: ['average speed', 'speedometer', 'odometer']",
+          "severity": "error"
+        },
+        {
+          "name": "formula_preserved",
+          "passed": true,
+          "details": "present",
+          "severity": "error"
+        },
+        {
+          "name": "numerical_consistency",
+          "passed": true,
+          "details": "all numbers from passage",
+          "severity": "error"
+        },
+        {
+          "name": "unit_consistency",
+          "passed": true,
+          "details": "consistent",
+          "severity": "error"
+        },
+        {
+          "name": "relationship_direction",
+          "passed": true,
+          "details": "no contradictions found",
+          "severity": "error"
+        },
+        {
+          "name": "unsupported_content",
+          "passed": true,
+          "details": "none flagged",
+          "severity": "error"
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "backend": "executorch_runner",
+        "generation_ok": true,
+        "error": null,
+        "validation": {
+          "kind": "summary",
+          "passed": false,
+          "checks": [
+            {
+              "name": "well_formed",
+              "passed": false,
+              "details": "fewer than 5 words",
+              "severity": "error"
+            }
+          ]
+        },
+        "wall_time_s": 0.2353501330000114,
+        "ttft_ms": 6.0,
+        "generated_tokens": 159
+      },
+      {
+        "number": 2,
+        "backend": "executorch_runner",
+        "generation_ok": true,
+        "error": null,
+        "validation": {
+          "kind": "summary",
+          "passed": false,
+          "checks": [
+            {
+              "name": "well_formed",
+              "passed": false,
+              "details": "fewer than 5 words",
+              "severity": "error"
+            }
+          ]
+        },
+        "wall_time_s": 0.2621747069999998,
+        "ttft_ms": 6.0,
+        "generated_tokens": 159
+      }
+    ],
+    "glosses": [],
+    "fallback_generated": true
+  },
+  "l1": {
+    "kind": "l1",
+    "text": "An object is said to be in motion when its position changes with time.\nSpeed tells us the distance an object covers in a unit of time.\nSpeed = distance ÷ time.\nTo find speed, divide the distance by the time.\nm/s means metre per second, the basic unit of speed.\nkm/h means kilometres per hour, a unit of speed used on roads.\nExample: a bus covers 120 km in 2 h.\n120 ÷ 2 = 60.\nSo its average speed is 60 km/h.\nIf the time is the same, more distance means higher speed.\nIf the distance is the same, less time means higher speed.\nMost vehicles do not move at a constant speed.\nSo we usually talk about average speed.\nA speedometer shows the vehicle's speed at that moment.\nAn odometer measures the total distance the vehicle has travelled.",
+    "source": "template",
+    "validated": true,
+    "validation": {
+      "kind": "l1",
+      "passed": true,
+      "checks": [
+        {
+          "name": "well_formed",
+          "passed": true,
+          "details": "",
+          "severity": "error"
+        },
+        {
+          "name": "key_term_coverage",
+          "passed": true,
+          "details": "7/7 required terms; missing: []",
+          "severity": "error"
+        },
+        {
+          "name": "formula_preserved",
+          "passed": true,
+          "details": "present",
+          "severity": "error"
+        },
+        {
+          "name": "numerical_consistency",
+          "passed": true,
+          "details": "all numbers from passage",
+          "severity": "error"
+        },
+        {
+          "name": "unit_consistency",
+          "passed": true,
+          "details": "consistent",
+          "severity": "error"
+        },
+        {
+          "name": "relationship_direction",
+          "passed": true,
+          "details": "no contradictions found",
+          "severity": "error"
+        },
+        {
+          "name": "unsupported_content",
+          "passed": true,
+          "details": "none flagged",
+          "severity": "error"
+        },
+        {
+          "name": "l1_short_sentences",
+          "passed": true,
+          "details": "average 9.4 words per sentence (limit 14)",
+          "severity": "error"
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "backend": "executorch_runner",
+        "generation_ok": true,
+        "error": null,
+        "validation": {
+          "kind": "l1",
+          "passed": false,
+          "checks": [
+            {
+              "name": "well_formed",
+              "passed": false,
+              "details": "fewer than 5 words",
+              "severity": "error"
+            }
+          ]
+        },
+        "wall_time_s": 0.41226874199999486,
+        "ttft_ms": 6.0,
+        "generated_tokens": 299
+      },
+      {
+        "number": 2,
+        "backend": "executorch_runner",
+        "generation_ok": true,
+        "error": null,
+        "validation": {
+          "kind": "l1",
+          "passed": false,
+          "checks": [
+            {
+              "name": "well_formed",
+              "passed": false,
+              "details": "fewer than 5 words",
+              "severity": "error"
+            }
+          ]
+        },
+        "wall_time_s": 0.3589640900000006,
+        "ttft_ms": 9.0,
+        "generated_tokens": 299
+      }
+    ],
+    "glosses": [],
+    "fallback_generated": true
+  },
+  "l2": {
+    "kind": "l2",
+    "text": "Speed is the distance an object covers in a unit of time. It is calculated as speed = distance ÷ time, and is measured in m/s or km/h. For example, a bus that covers 120 km in 2 h has an average speed of 60 km/h. If the time is the same, more distance means higher speed. If the distance is the same, less time means higher speed. Most vehicles do not move at a constant speed, so we usually talk about average speed. A speedometer shows the vehicle's speed at that moment; an odometer measures the total distance the vehicle has travelled.",
+    "source": "template",
+    "validated": true,
+    "validation": {
+      "kind": "l2",
+      "passed": true,
+      "checks": [
+        {
+          "name": "well_formed",
+          "passed": true,
+          "details": "",
+          "severity": "error"
+        },
+        {
+          "name": "key_term_coverage",
+          "passed": true,
+          "details": "7/7 required terms; missing: []",
+          "severity": "error"
+        },
+        {
+          "name": "formula_preserved",
+          "passed": true,
+          "details": "present",
+          "severity": "error"
+        },
+        {
+          "name": "numerical_consistency",
+          "passed": true,
+          "details": "all numbers from passage",
+          "severity": "error"
+        },
+        {
+          "name": "unit_consistency",
+          "passed": true,
+          "details": "consistent",
+          "severity": "error"
+        },
+        {
+          "name": "relationship_direction",
+          "passed": true,
+          "details": "no contradictions found",
+          "severity": "error"
+        },
+        {
+          "name": "unsupported_content",
+          "passed": true,
+          "details": "none flagged",
+          "severity": "error"
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "backend": "executorch_runner",
+        "generation_ok": true,
+        "error": null,
+        "validation": {
+          "kind": "l2",
+          "passed": false,
+          "checks": [
+            {
+              "name": "well_formed",
+              "passed": false,
+              "details": "fewer than 5 words",
+              "severity": "error"
+            }
+          ]
+        },
+        "wall_time_s": 0.19016891100000066,
+        "ttft_ms": 5.0,
+        "generated_tokens": 179
+      },
+      {
+        "number": 2,
+        "backend": "executorch_runner",
+        "generation_ok": true,
+        "error": null,
+        "validation": {
+          "kind": "l2",
+          "passed": false,
+          "checks": [
+            {
+              "name": "well_formed",
+              "passed": false,
+              "details": "fewer than 5 words",
+              "severity": "error"
+            }
+          ]
+        },
+        "wall_time_s": 0.22815705600000058,
+        "ttft_ms": 6.0,
+        "generated_tokens": 179
+      }
+    ],
+    "glosses": [],
+    "fallback_generated": true
+  },
+  "l3": {
+    "kind": "l3",
+    "text": "An object is said to be in motion when its position changes with time. The distance an object covers in a unit of time is called its speed. Speed is calculated by dividing the total distance covered by the total time taken. The basic unit of speed is metre per second (m/s), but speed on roads is usually given in kilometres per hour (km/h). For example, a bus that covers 120 kilometres in 2 hours has an average speed of 60 km/h. If the time taken stays the same, a vehicle that covers a greater distance must have a higher speed. If two vehicles cover the same distance, the one that takes less time is faster. Most vehicles do not move at a constant speed; they speed up and slow down along the way. That is why we usually talk about average speed. A speedometer in a vehicle shows its speed at that moment, while an odometer measures the total distance it has travelled. Knowing speed helps us plan journeys and estimate how long they will take.",
+    "source": "original",
+    "validated": true,
+    "validation": {
+      "kind": "l3",
+      "passed": true,
+      "checks": [
+        {
+          "name": "well_formed",
+          "passed": true,
+          "details": "",
+          "severity": "error"
+        },
+        {
+          "name": "original_text_unchanged",
+          "passed": true,
+          "details": "all sentences verbatim",
+          "severity": "error"
+        },
+        {
+          "name": "numerical_consistency",
+          "passed": true,
+          "details": "all numbers from passage",
+          "severity": "error"
+        },
+        {
+          "name": "unit_consistency",
+          "passed": true,
+          "details": "consistent",
+          "severity": "error"
+        },
+        {
+          "name": "relationship_direction",
+          "passed": true,
+          "details": "no contradictions found",
+          "severity": "error"
+        }
+      ]
+    },
+    "attempts": [],
+    "glosses": [
+      {
+        "term": "speed",
+        "sid": "S2",
+        "gloss": "distance an object covers in a unit of time"
+      },
+      {
+        "term": "speed = distance ÷ time",
+        "sid": "S3",
+        "gloss": "how speed is calculated"
+      },
+      {
+        "term": "m/s",
+        "sid": "S4",
+        "gloss": "metre per second, the basic unit of speed"
+      },
+      {
+        "term": "km/h",
+        "sid": "S4",
+        "gloss": "kilometres per hour, a unit of speed used on roads"
+      },
+      {
+        "term": "average speed",
+        "sid": "S5",
+        "gloss": "total distance ÷ total time"
+      },
+      {
+        "term": "speedometer",
+        "sid": "S10",
+        "gloss": "the vehicle's speed at that moment"
+      },
+      {
+        "term": "odometer",
+        "sid": "S10",
+        "gloss": "the total distance the vehicle has travelled"
+      }
+    ],
+    "fallback_generated": false
+  }
+}

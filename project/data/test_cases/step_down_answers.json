@@ -1,0 +1,6 @@
+{"description": "Placement 2/3 -> L2; both L2 items wrong and both second chances wrong -> R3 step down to L1; L1 resolved -> back at L2 whose items were already delivered -> session ends with teacher note.",
+ "expected": {"start_rung": 2, "rung_path": ["L2", "L1", "L2"], "bridge_reached": false},
+ "answers": {"P1": {"select": "correct"}, "P2": {"select": "correct"}, "P3": {"select": "error:reversed_relation"},
+             "Q3": {"select": "error:term_confusion", "certainty": 2}, "Q3b": {"select": "error:term_confusion"},
+             "Q4": {"select": "error:reversed_relation", "certainty": 3}, "Q4b": {"select": "error:reversed_relation"},
+             "Q1": {"select": "correct"}, "Q2": {"value": "60 km/h"}}}

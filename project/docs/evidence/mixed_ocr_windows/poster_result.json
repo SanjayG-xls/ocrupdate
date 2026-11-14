@@ -1,0 +1,490 @@
+{
+  "backend": "pix2tex (CPU, local)",
+  "blocks": [
+    {
+      "bbox": [
+        46.33,
+        82.0,
+        232.0,
+        19.33
+      ],
+      "column": -1,
+      "id": "block_0",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 0,
+      "text": "PHYSICS FORMULAS"
+    },
+    {
+      "bbox": [
+        109.0,
+        110.0,
+        108.67,
+        17.33
+      ],
+      "column": -1,
+      "id": "block_1",
+      "kind": "text",
+      "ocr_confidence": 9.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 1,
+      "text": "—-~CLASS 9-"
+    },
+    {
+      "bbox": [
+        57.67,
+        148.67,
+        57.33,
+        12.33
+      ],
+      "column": 0,
+      "id": "block_2",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 2,
+      "text": "MOTION"
+    },
+    {
+      "bbox": [
+        52.33,
+        175.0,
+        62.67,
+        10.33
+      ],
+      "column": 0,
+      "id": "block_3",
+      "kind": "math",
+      "latex": "y=u+a t",
+      "ocr_confidence": 13.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.127,
+      "review_required": true,
+      "row": 3,
+      "text": "Vv-u-+at"
+    },
+    {
+      "bbox": [
+        48.0,
+        195.67,
+        83.0,
+        27.33
+      ],
+      "column": 0,
+      "id": "block_4",
+      "kind": "math",
+      "latex": "s=u t+{\\frac{1}{2}}a t^{2}",
+      "ocr_confidence": 43.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.347,
+      "review_required": true,
+      "row": 4,
+      "text": "$= ut +5.at’"
+    },
+    {
+      "bbox": [
+        58.0,
+        231.0,
+        54.0,
+        25.0
+      ],
+      "column": 0,
+      "id": "block_5",
+      "kind": "math",
+      "latex": "a={\\frac{\\nu-u}{t}}",
+      "ocr_confidence": 0.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.257,
+      "review_required": true,
+      "row": 5,
+      "text": "a=*—"
+    },
+    {
+      "bbox": [
+        61.0,
+        278.33,
+        56.0,
+        12.67
+      ],
+      "column": 0,
+      "id": "block_6",
+      "kind": "text",
+      "ocr_confidence": 94.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 6,
+      "text": "ENERGY"
+    },
+    {
+      "bbox": [
+        46.33,
+        294.67,
+        86.33,
+        12.67
+      ],
+      "column": 0,
+      "id": "block_7",
+      "kind": "text",
+      "ocr_confidence": 96.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 7,
+      "text": "AND POWER"
+    },
+    {
+      "bbox": [
+        51.33,
+        314.0,
+        68.67,
+        26.0
+      ],
+      "column": 0,
+      "id": "block_8",
+      "kind": "math",
+      "latex": "K E={\\frac{1}{2}}m\\nu^{2}",
+      "ocr_confidence": 19.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.359,
+      "review_required": true,
+      "row": 8,
+      "text": "KE = Smv’"
+    },
+    {
+      "bbox": [
+        57.0,
+        348.67,
+        61.0,
+        16.33
+      ],
+      "column": 0,
+      "id": "block_9",
+      "kind": "math",
+      "latex": "P E=m g h",
+      "ocr_confidence": 50.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.108,
+      "review_required": true,
+      "row": 9,
+      "text": "PE = mgh"
+    },
+    {
+      "bbox": [
+        64.33,
+        374.67,
+        34.33,
+        25.67
+      ],
+      "column": 0,
+      "id": "block_10",
+      "kind": "math",
+      "latex": "\\textstyle P={\\frac{W}{t}}",
+      "ocr_confidence": 40.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.239,
+      "review_required": true,
+      "row": 10,
+      "text": "P=\""
+    },
+    {
+      "bbox": [
+        57.67,
+        425.67,
+        58.67,
+        12.67
+      ],
+      "column": 0,
+      "id": "block_11",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 11,
+      "text": "DENSITY"
+    },
+    {
+      "bbox": [
+        67.0,
+        448.0,
+        34.33,
+        26.67
+      ],
+      "column": 0,
+      "id": "block_12",
+      "kind": "math",
+      "latex": "\\rho={\\frac{m}{V}}",
+      "ocr_confidence": 0.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.278,
+      "review_required": true,
+      "row": 12,
+      "text": "R="
+    },
+    {
+      "bbox": [
+        28.67,
+        482.67,
+        127.33,
+        12.0
+      ],
+      "column": 0,
+      "id": "block_13",
+      "kind": "text",
+      "ocr_confidence": 87.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 13,
+      "text": "V: Mass of Fluid Displaced"
+    },
+    {
+      "bbox": [
+        28.33,
+        498.0,
+        77.67,
+        12.0
+      ],
+      "column": 0,
+      "id": "block_14",
+      "kind": "text",
+      "ocr_confidence": 15.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 14,
+      "text": "po: Height (Fluid)"
+    },
+    {
+      "bbox": [
+        217.67,
+        148.67,
+        46.33,
+        12.33
+      ],
+      "column": 1,
+      "id": "block_15",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 15,
+      "text": "FORCE"
+    },
+    {
+      "bbox": [
+        216.0,
+        174.0,
+        45.33,
+        12.0
+      ],
+      "column": 1,
+      "id": "block_16",
+      "kind": "math",
+      "latex": "F=m a",
+      "ocr_confidence": 20.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.11,
+      "review_required": true,
+      "row": 16,
+      "text": "ke = ma"
+    },
+    {
+      "bbox": [
+        218.67,
+        220.0,
+        44.0,
+        12.33
+      ],
+      "column": 1,
+      "id": "block_17",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 17,
+      "text": "WORK"
+    },
+    {
+      "bbox": [
+        215.33,
+        242.67,
+        47.0,
+        13.33
+      ],
+      "column": 1,
+      "id": "block_18",
+      "kind": "math",
+      "latex": "W=F d",
+      "ocr_confidence": 21.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.114,
+      "review_required": true,
+      "row": 18,
+      "text": "W = Fd"
+    },
+    {
+      "bbox": [
+        211.33,
+        270.0,
+        59.0,
+        17.0
+      ],
+      "column": 1,
+      "id": "block_19",
+      "kind": "math",
+      "latex": "W=m g h",
+      "ocr_confidence": 89.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.131,
+      "review_required": true,
+      "row": 19,
+      "text": "W = mgh"
+    },
+    {
+      "bbox": [
+        212.0,
+        313.33,
+        58.33,
+        13.0
+      ],
+      "column": 1,
+      "id": "block_20",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 20,
+      "text": "DENSITY"
+    },
+    {
+      "bbox": [
+        220.67,
+        337.67,
+        36.67,
+        26.0
+      ],
+      "column": 1,
+      "id": "block_21",
+      "kind": "math",
+      "latex": "\\rho={\\frac{m}{V}}",
+      "ocr_confidence": 0.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.202,
+      "review_required": true,
+      "row": 21,
+      "text": "p=>,"
+    },
+    {
+      "bbox": [
+        192.0,
+        389.0,
+        98.67,
+        12.67
+      ],
+      "column": 1,
+      "id": "block_22",
+      "kind": "text",
+      "ocr_confidence": 91.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 22,
+      "text": "ARCHIMEDES’"
+    },
+    {
+      "bbox": [
+        204.0,
+        405.67,
+        73.0,
+        12.67
+      ],
+      "column": 1,
+      "id": "block_23",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 23,
+      "text": "PRINCIPLE"
+    },
+    {
+      "bbox": [
+        212.33,
+        433.67,
+        56.67,
+        15.33
+      ],
+      "column": 1,
+      "id": "block_24",
+      "kind": "math",
+      "latex": "F_{B}=V\\,\\rho g",
+      "ocr_confidence": 0.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.23,
+      "review_required": true,
+      "row": 24,
+      "text": "F,=V pg"
+    },
+    {
+      "bbox": [
+        204.33,
+        455.0,
+        86.67,
+        13.0
+      ],
+      "column": 1,
+      "id": "block_25",
+      "kind": "text",
+      "ocr_confidence": 37.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 25,
+      "text": "F.: Buoyant Foree"
+    },
+    {
+      "bbox": [
+        187.0,
+        472.0,
+        97.33,
+        13.33
+      ],
+      "column": 1,
+      "id": "block_26",
+      "kind": "text",
+      "ocr_confidence": 40.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 26,
+      "text": "P.: Density of Fluid"
+    },
+    {
+      "bbox": [
+        205.67,
+        488.0,
+        79.0,
+        10.33
+      ],
+      "column": 1,
+      "id": "block_27",
+      "kind": "text",
+      "ocr_confidence": 72.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 27,
+      "text": "(Density of Fluid)"
+    }
+  ],
+  "columns": 2,
+  "combined_text": "PHYSICS FORMULAS\n—-~CLASS 9-\nMOTION\n$y=u+a t$\n$s=u t+{\\frac{1}{2}}a t^{2}$\n$a={\\frac{\\nu-u}{t}}$\nENERGY\nAND POWER\n$K E={\\frac{1}{2}}m\\nu^{2}$\n$P E=m g h$\n$\\textstyle P={\\frac{W}{t}}$\nDENSITY\n$\\rho={\\frac{m}{V}}$\nV: Mass of Fluid Displaced\npo: Height (Fluid)\nFORCE\n$F=m a$\nWORK\n$W=F d$\n$W=m g h$\nDENSITY\n$\\rho={\\frac{m}{V}}$\nARCHIMEDES’\nPRINCIPLE\n$F_{B}=V\\,\\rho g$\nF.: Buoyant Foree\nP.: Density of Fluid\n(Density of Fluid)",
+  "duration_s": 11.673,
+  "equation_candidates": 12,
+  "height": 597,
+  "model_load_s": 6.001,
+  "recognised_equations": 12,
+  "recognition_s": 2.527,
+  "review_required": true,
+  "warnings": [
+    "Automatic layout and equation recognition can miss or misclassify content. Review every block against the photo."
+  ],
+  "width": 335
+}

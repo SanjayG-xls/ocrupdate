@@ -1,0 +1,5 @@
+{"description": "540 error, then wrong second chance (48) -> Safety Net + teacher note; session ends at L1 (one unresolved error, R3 not satisfied).",
+ "expected": {"start_rung": 1, "rung_path": ["L1"], "bridge_reached": false, "C3": "Fragile"},
+ "answers": {"P1": {"select": "correct"}, "P2": {"select": "error:term_confusion"}, "P3": {"select": "error:no_change"},
+             "Q1": {"select": "correct", "certainty": 2}, "Q2": {"value": "540", "certainty": 3},
+             "Q2b": {"value": "48", "certainty": 3}}}

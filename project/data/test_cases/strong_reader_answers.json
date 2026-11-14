@@ -1,0 +1,4 @@
+{"description": "Placement 3/3 -> starts at L3 (no L1/L2 items) -> bridge check Meena 4 km/h.",
+ "expected": {"start_rung": 3, "rung_path": ["L3"], "bridge_reached": true},
+ "answers": {"P1": {"select": "correct"}, "P2": {"select": "correct"}, "P3": {"select": "correct"},
+             "T1": {"value": "4 km/h", "certainty": 3}}}

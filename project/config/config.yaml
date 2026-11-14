@@ -1,0 +1,93 @@
+# Level Bridge STEM – application configuration.
+# All paths are relative to the project root unless absolute.
+
+project:
+  name: "Level Bridge STEM"
+  report_version: "PS1 PoC Technical Report v2"
+
+ocr:
+  enabled: true
+  storage_dir: "data/ocr"
+  camera_index: null # Pi: auto-detect first usable USB V4L2 camera
+  camera_warmup_s: 1.5 # allow exposure to settle after reopening for capture
+  math:
+    enabled: false # equation conversion disabled; reader uses Tesseract only
+    timeout_s: 120
+    max_regions: 24 # automatic mixed-page equations per request; excess regions remain visible for review
+    example_scan_id: "a6a4e087e8164112b55762efee673d95"
+  trusted_hosts: ["127.0.0.1", "localhost", "[::1]"] # add Pi hostname/IP for explicit LAN mode
+  confidence_threshold: 70
+  max_bytes: 12582912
+  max_pixels: 20000000
+  timeout_s: 45
+  orientation: true
+  contrast: true
+  threshold: true
+  deskew: true
+
+paths:
+  outputs_dir: "outputs"
+  logs_dir: "logs"
+  model_config: "config/model_config.yaml"
+  synonyms: "config/synonyms.yaml"
+  item_contexts: "config/item_contexts.yaml"
+
+passage:
+  # PS1 asks for ~150-300 word passages. Outside this band we warn; outside
+  # the hard band we reject (the rule-based extraction is not designed for it).
+  target_min_words: 150
+  target_max_words: 300
+  hard_min_words: 50
+  hard_max_words: 450
+
+explanations:
+  max_attempts: 2              # first attempt + one retry (report: "retry ≤1")
+  summary_min_term_coverage: 0.5
+  l1_max_words_per_sentence: 14
+  max_new_tokens:
+    summary: 160
+    l1: 300
+    l2: 180
+    question_stems: 220
+    repair: 120
+
+questions:
+  # LLM may reword stems; Python validates and keeps the template if invalid. Set to false on the day if
+  # reworded stems turn questions into statements (report Section 5.3) - template stems are always valid.
+  llm_stem_rewording: true
+  items_per_rung: 2            # one definition item + one quantitative/relationship item
+
+routing:
+  # R1: placement score -> starting rung
+  placement_to_rung: {0: 1, 1: 1, 2: 2, 3: 3}
+  step_down_unresolved_errors: 2   # R3: two unresolved errors at a rung step down
+  enable_consolidated_state: false # 'Consolidated' is proposed in the report (not core)
+
+scoring:
+  bloom_weights: {recall: 1, understand: 2, apply: 3, transfer: 4}
+  certainty_levels: [1, 2, 3]
+  # CBM (Gardner-Medwin) as stated on page 3 of the report
+  cbm:
+    correct: {1: 1, 2: 2, 3: 3}
+    wrong:   {1: 0, 2: -2, 3: -6}
+
+repair:
+  llm_wording: false           # report: repair wording by LLM is optional; templates by default
+
+safety_net:
+  enabled: true                # core: word card + worked example; representation switch is an extension
+
+benchmark:
+  warmup_runs: 1
+  measured_runs: 5
+
+# ---- Teach · Learn · Improve (report Section 7). Every feature can be switched off here.
+product:
+  source_tags: true            # show [S3]-style source tags on L1/L2 explanation sentences (display only)
+  learner_memory: true         # update the learner profile when a session is run with --learner STU-xxxx
+  learners_dir: "data/learners"   # student device: one JSON profile per pseudonymous ID
+  hub_dir: "data/hub"             # teacher hub: profiles merged from USB bundles
+  packs_dir: "data/packs"         # lesson packs built on the hub
+  usb_dir: "usb_export"           # default export folder (point it at the mounted USB drive)
+  portal_path: "outputs/cbs_portal.html"
+  warn_unapproved_pack: true   # print a warning when a session uses a pack the teacher has not reviewed

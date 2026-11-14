@@ -1,0 +1,660 @@
+{
+  "composition": {
+    "placement": 3,
+    "assessment": 4,
+    "second_chance": 4,
+    "transfer": 1,
+    "total": 12
+  },
+  "items": [
+    {
+      "item_id": "P1",
+      "kind": "placement",
+      "concept_id": "C1",
+      "knowledge_type": "definition",
+      "cognitive_level": null,
+      "rung": null,
+      "response_type": "mcq",
+      "stem": "What is the basic unit of speed?",
+      "source_sids": [
+        "S4"
+      ],
+      "explanation": "metre per second, the basic unit of speed (S4).",
+      "options": [
+        {
+          "key": "A",
+          "text": "s (second)",
+          "correct": false,
+          "error_code": "dimension_confusion"
+        },
+        {
+          "key": "B",
+          "text": "h (hour)",
+          "correct": false,
+          "error_code": "dimension_confusion"
+        },
+        {
+          "key": "C",
+          "text": "m/s (metre per second)",
+          "correct": true,
+          "error_code": null
+        },
+        {
+          "key": "D",
+          "text": "km (kilometre)",
+          "correct": false,
+          "error_code": "dimension_confusion"
+        }
+      ],
+      "answer_key": "C",
+      "numeric": null,
+      "probe_type": "literal",
+      "parent_item": null,
+      "stem_source": "template",
+      "template_stem": "What is the basic unit of speed?"
+    },
+    {
+      "item_id": "P2",
+      "kind": "placement",
+      "concept_id": "C2",
+      "knowledge_type": "definition",
+      "cognitive_level": null,
+      "rung": null,
+      "response_type": "mcq",
+      "stem": "In sentence S10, what does \"odometer\" mean?",
+      "source_sids": [
+        "S10"
+      ],
+      "explanation": "Odometer: the total distance the vehicle has travelled (S10).",
+      "options": [
+        {
+          "key": "A",
+          "text": "Speed at that moment",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "B",
+          "text": "Total distance travelled",
+          "correct": true,
+          "error_code": null
+        },
+        {
+          "key": "C",
+          "text": "An object's position changes with time",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "D",
+          "text": "Distance covered in a unit of time",
+          "correct": false,
+          "error_code": "term_confusion"
+        }
+      ],
+      "answer_key": "B",
+      "numeric": null,
+      "probe_type": "word_in_context",
+      "parent_item": null,
+      "stem_source": "template",
+      "template_stem": "In sentence S10, what does \"odometer\" mean?"
+    },
+    {
+      "item_id": "P3",
+      "kind": "placement",
+      "concept_id": "C5",
+      "knowledge_type": "quantitative",
+      "cognitive_level": null,
+      "rung": null,
+      "response_type": "mcq",
+      "stem": "Asha and Ravi both travel 10 km. Asha takes 30 min and Ravi takes 40 min. Who is faster?",
+      "source_sids": [
+        "S7"
+      ],
+      "explanation": "Asha: 20 km/h; Ravi: 15 km/h. (S7: \"If two vehicles cover the same distance, the one that takes less time is faster.\")",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both have the same speed",
+          "correct": false,
+          "error_code": "no_change"
+        },
+        {
+          "key": "B",
+          "text": "Ravi",
+          "correct": false,
+          "error_code": "reversed_relation"
+        },
+        {
+          "key": "C",
+          "text": "It cannot be found from this information",
+          "correct": false,
+          "error_code": "missing_variable"
+        },
+        {
+          "key": "D",
+          "text": "Asha",
+          "correct": true,
+          "error_code": null
+        }
+      ],
+      "answer_key": "D",
+      "numeric": null,
+      "probe_type": "inference",
+      "parent_item": null,
+      "stem_source": "template",
+      "template_stem": "Asha and Ravi both travel 10 km. Asha takes 30 min and Ravi takes 40 min. Who is faster?"
+    },
+    {
+      "item_id": "Q1",
+      "kind": "assessment",
+      "concept_id": "C1",
+      "knowledge_type": "definition",
+      "cognitive_level": "recall",
+      "rung": 1,
+      "response_type": "mcq",
+      "stem": "What is speed?",
+      "source_sids": [
+        "S2"
+      ],
+      "explanation": "Speed: distance an object covers in a unit of time (S2).",
+      "options": [
+        {
+          "key": "A",
+          "text": "Total distance travelled",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "B",
+          "text": "Speed at that moment",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "C",
+          "text": "An object's position changes with time",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "D",
+          "text": "Distance covered in a unit of time",
+          "correct": true,
+          "error_code": null
+        }
+      ],
+      "answer_key": "D",
+      "numeric": null,
+      "probe_type": null,
+      "parent_item": null,
+      "stem_source": "template",
+      "template_stem": "What is speed?"
+    },
+    {
+      "item_id": "Q2",
+      "kind": "assessment",
+      "concept_id": "C3",
+      "knowledge_type": "quantitative",
+      "cognitive_level": "apply",
+      "rung": 1,
+      "response_type": "numeric",
+      "stem": "A train covers 180 km in 3 h. What is the average speed in km/h? (type a number)",
+      "source_sids": [
+        "S3"
+      ],
+      "explanation": "Formula: speed = distance ÷ time Substitute: speed = 180 km ÷ 3 h Calculate: 180 ÷ 3 = 60 Answer: 60 km/h",
+      "options": [],
+      "answer_key": null,
+      "numeric": {
+        "inputs": {
+          "numerator": {
+            "value": 180.0,
+            "unit": "km",
+            "dimension": "length"
+          },
+          "denominator": {
+            "value": 3.0,
+            "unit": "h",
+            "dimension": "time"
+          }
+        },
+        "solution": {
+          "formula": "speed = distance ÷ time",
+          "conversions": [],
+          "substitution": "speed = 180 km ÷ 3 h",
+          "calculation": "180 ÷ 3 = 60",
+          "value": 60.0,
+          "unit": "km/h",
+          "answer_text": "60 km/h",
+          "steps": [
+            "Formula: speed = distance ÷ time",
+            "Substitute: speed = 180 km ÷ 3 h",
+            "Calculate: 180 ÷ 3 = 60",
+            "Answer: 60 km/h"
+          ]
+        },
+        "error_models": [
+          {
+            "code": "wrong_operation_multiply",
+            "value": 540.0,
+            "unit_label": "km·h",
+            "explanation": "180 km × 3 h = 540 km·h, which is not a unit of speed."
+          },
+          {
+            "code": "wrong_operation_add",
+            "value": 183.0,
+            "unit_label": "invalid",
+            "explanation": "180 km + 3 h cannot be added: they measure different things."
+          },
+          {
+            "code": "inverted_formula",
+            "value": 0.016666666666666666,
+            "unit_label": "h/km",
+            "explanation": "3 h ÷ 180 km gives h/km; speed is distance ÷ time."
+          },
+          {
+            "code": "ignored_variable",
+            "value": 180.0,
+            "unit_label": "km",
+            "explanation": "180 km is the distance, not the speed; the time must be used."
+          }
+        ]
+      },
+      "probe_type": null,
+      "parent_item": null,
+      "stem_source": "template",
+      "template_stem": "A train covers 180 km in 3 h. What is the average speed in km/h? (type a number)"
+    },
+    {
+      "item_id": "Q3",
+      "kind": "assessment",
+      "concept_id": "C2",
+      "knowledge_type": "definition",
+      "cognitive_level": "recall",
+      "rung": 2,
+      "response_type": "mcq",
+      "stem": "What does an odometer measure?",
+      "source_sids": [
+        "S10"
+      ],
+      "explanation": "Odometer: the total distance the vehicle has travelled (S10).",
+      "options": [
+        {
+          "key": "A",
+          "text": "Distance covered in a unit of time",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "B",
+          "text": "An object's position changes with time",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "C",
+          "text": "Speed at that moment",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "D",
+          "text": "Total distance travelled",
+          "correct": true,
+          "error_code": null
+        }
+      ],
+      "answer_key": "D",
+      "numeric": null,
+      "probe_type": null,
+      "parent_item": null,
+      "stem_source": "template",
+      "template_stem": "What does an odometer measure?"
+    },
+    {
+      "item_id": "Q4",
+      "kind": "assessment",
+      "concept_id": "C4",
+      "knowledge_type": "quantitative",
+      "cognitive_level": "apply",
+      "rung": 2,
+      "response_type": "mcq",
+      "stem": "In 1 h, bus X covers 50 km and bus Y covers 65 km. Which has the higher average speed?",
+      "source_sids": [
+        "S6"
+      ],
+      "explanation": "Bus X: 50 km/h; bus Y: 65 km/h. (S6: \"If the time taken stays the same, a vehicle that covers a greater distance must have a higher speed.\")",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bus X",
+          "correct": false,
+          "error_code": "reversed_relation"
+        },
+        {
+          "key": "B",
+          "text": "Bus Y",
+          "correct": true,
+          "error_code": null
+        },
+        {
+          "key": "C",
+          "text": "It cannot be found from this information",
+          "correct": false,
+          "error_code": "missing_variable"
+        },
+        {
+          "key": "D",
+          "text": "Both have the same speed",
+          "correct": false,
+          "error_code": "no_change"
+        }
+      ],
+      "answer_key": "B",
+      "numeric": null,
+      "probe_type": null,
+      "parent_item": null,
+      "stem_source": "template",
+      "template_stem": "In 1 h, bus X covers 50 km and bus Y covers 65 km. Which has the higher average speed?"
+    },
+    {
+      "item_id": "Q1b",
+      "kind": "second_chance",
+      "concept_id": "C1",
+      "knowledge_type": "definition",
+      "cognitive_level": "recall",
+      "rung": 1,
+      "response_type": "mcq",
+      "stem": "Which term means \"distance covered in a unit of time\"?",
+      "source_sids": [
+        "S2"
+      ],
+      "explanation": "Speed: distance an object covers in a unit of time (S2).",
+      "options": [
+        {
+          "key": "A",
+          "text": "odometer",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "B",
+          "text": "speed",
+          "correct": true,
+          "error_code": null
+        },
+        {
+          "key": "C",
+          "text": "speedometer",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "D",
+          "text": "motion",
+          "correct": false,
+          "error_code": "term_confusion"
+        }
+      ],
+      "answer_key": "B",
+      "numeric": null,
+      "probe_type": null,
+      "parent_item": "Q1",
+      "stem_source": "template",
+      "template_stem": "Which term means \"distance covered in a unit of time\"?"
+    },
+    {
+      "item_id": "Q2b",
+      "kind": "second_chance",
+      "concept_id": "C3",
+      "knowledge_type": "quantitative",
+      "cognitive_level": "apply",
+      "rung": 1,
+      "response_type": "numeric",
+      "stem": "A cyclist rides 24 km in 2 h. What is the average speed in km/h? (type a number)",
+      "source_sids": [
+        "S3"
+      ],
+      "explanation": "Formula: speed = distance ÷ time Substitute: speed = 24 km ÷ 2 h Calculate: 24 ÷ 2 = 12 Answer: 12 km/h",
+      "options": [],
+      "answer_key": null,
+      "numeric": {
+        "inputs": {
+          "numerator": {
+            "value": 24.0,
+            "unit": "km",
+            "dimension": "length"
+          },
+          "denominator": {
+            "value": 2.0,
+            "unit": "h",
+            "dimension": "time"
+          }
+        },
+        "solution": {
+          "formula": "speed = distance ÷ time",
+          "conversions": [],
+          "substitution": "speed = 24 km ÷ 2 h",
+          "calculation": "24 ÷ 2 = 12",
+          "value": 12.0,
+          "unit": "km/h",
+          "answer_text": "12 km/h",
+          "steps": [
+            "Formula: speed = distance ÷ time",
+            "Substitute: speed = 24 km ÷ 2 h",
+            "Calculate: 24 ÷ 2 = 12",
+            "Answer: 12 km/h"
+          ]
+        },
+        "error_models": [
+          {
+            "code": "wrong_operation_multiply",
+            "value": 48.0,
+            "unit_label": "km·h",
+            "explanation": "24 km × 2 h = 48 km·h, which is not a unit of speed."
+          },
+          {
+            "code": "wrong_operation_add",
+            "value": 26.0,
+            "unit_label": "invalid",
+            "explanation": "24 km + 2 h cannot be added: they measure different things."
+          },
+          {
+            "code": "inverted_formula",
+            "value": 0.08333333333333333,
+            "unit_label": "h/km",
+            "explanation": "2 h ÷ 24 km gives h/km; speed is distance ÷ time."
+          },
+          {
+            "code": "ignored_variable",
+            "value": 24.0,
+            "unit_label": "km",
+            "explanation": "24 km is the distance, not the speed; the time must be used."
+          }
+        ]
+      },
+      "probe_type": null,
+      "parent_item": "Q2",
+      "stem_source": "template",
+      "template_stem": "A cyclist rides 24 km in 2 h. What is the average speed in km/h? (type a number)"
+    },
+    {
+      "item_id": "Q3b",
+      "kind": "second_chance",
+      "concept_id": "C2",
+      "knowledge_type": "definition",
+      "cognitive_level": "recall",
+      "rung": 2,
+      "response_type": "mcq",
+      "stem": "Which term means \"total distance travelled\"?",
+      "source_sids": [
+        "S10"
+      ],
+      "explanation": "Odometer: the total distance the vehicle has travelled (S10).",
+      "options": [
+        {
+          "key": "A",
+          "text": "motion",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "B",
+          "text": "speed",
+          "correct": false,
+          "error_code": "term_confusion"
+        },
+        {
+          "key": "C",
+          "text": "odometer",
+          "correct": true,
+          "error_code": null
+        },
+        {
+          "key": "D",
+          "text": "speedometer",
+          "correct": false,
+          "error_code": "term_confusion"
+        }
+      ],
+      "answer_key": "C",
+      "numeric": null,
+      "probe_type": null,
+      "parent_item": "Q3",
+      "stem_source": "template",
+      "template_stem": "Which term means \"total distance travelled\"?"
+    },
+    {
+      "item_id": "Q4b",
+      "kind": "second_chance",
+      "concept_id": "C4",
+      "knowledge_type": "quantitative",
+      "cognitive_level": "apply",
+      "rung": 2,
+      "response_type": "mcq",
+      "stem": "In 2 h, car P covers 90 km and car Q covers 70 km. Which has the higher average speed?",
+      "source_sids": [
+        "S6"
+      ],
+      "explanation": "Car P: 45 km/h; car Q: 35 km/h. (S6: \"If the time taken stays the same, a vehicle that covers a greater distance must have a higher speed.\")",
+      "options": [
+        {
+          "key": "A",
+          "text": "It cannot be found from this information",
+          "correct": false,
+          "error_code": "missing_variable"
+        },
+        {
+          "key": "B",
+          "text": "Car P",
+          "correct": true,
+          "error_code": null
+        },
+        {
+          "key": "C",
+          "text": "Both have the same speed",
+          "correct": false,
+          "error_code": "no_change"
+        },
+        {
+          "key": "D",
+          "text": "Car Q",
+          "correct": false,
+          "error_code": "reversed_relation"
+        }
+      ],
+      "answer_key": "B",
+      "numeric": null,
+      "probe_type": null,
+      "parent_item": "Q4",
+      "stem_source": "template",
+      "template_stem": "In 2 h, car P covers 90 km and car Q covers 70 km. Which has the higher average speed?"
+    },
+    {
+      "item_id": "T1",
+      "kind": "transfer",
+      "concept_id": "C3",
+      "knowledge_type": "quantitative",
+      "cognitive_level": "transfer",
+      "rung": 3,
+      "response_type": "numeric",
+      "stem": "Meena walks 2 km to school in 30 min. What is the average speed in km/h? (type a number)",
+      "source_sids": [
+        "S3",
+        "S4"
+      ],
+      "explanation": "Formula: speed = distance ÷ time Convert: 30 min = 0.5 h Substitute: speed = 2 km ÷ 0.5 h Calculate: 2 ÷ 0.5 = 4 Answer: 4 km/h",
+      "options": [],
+      "answer_key": null,
+      "numeric": {
+        "inputs": {
+          "numerator": {
+            "value": 2.0,
+            "unit": "km",
+            "dimension": "length"
+          },
+          "denominator": {
+            "value": 30.0,
+            "unit": "min",
+            "dimension": "time"
+          }
+        },
+        "solution": {
+          "formula": "speed = distance ÷ time",
+          "conversions": [
+            "30 min = 0.5 h"
+          ],
+          "substitution": "speed = 2 km ÷ 0.5 h",
+          "calculation": "2 ÷ 0.5 = 4",
+          "value": 4.0,
+          "unit": "km/h",
+          "answer_text": "4 km/h",
+          "steps": [
+            "Formula: speed = distance ÷ time",
+            "Convert: 30 min = 0.5 h",
+            "Substitute: speed = 2 km ÷ 0.5 h",
+            "Calculate: 2 ÷ 0.5 = 4",
+            "Answer: 4 km/h"
+          ]
+        },
+        "error_models": [
+          {
+            "code": "wrong_operation_multiply",
+            "value": 60.0,
+            "unit_label": "km·min",
+            "explanation": "2 km × 30 min = 60 km·min, which is not a unit of speed."
+          },
+          {
+            "code": "wrong_operation_add",
+            "value": 32.0,
+            "unit_label": "invalid",
+            "explanation": "2 km + 30 min cannot be added: they measure different things."
+          },
+          {
+            "code": "inverted_formula",
+            "value": 15.0,
+            "unit_label": "min/km",
+            "explanation": "30 min ÷ 2 km gives min/km; speed is distance ÷ time."
+          },
+          {
+            "code": "ignored_variable",
+            "value": 2.0,
+            "unit_label": "km",
+            "explanation": "2 km is the distance, not the speed; the time must be used."
+          },
+          {
+            "code": "unit_not_converted",
+            "value": 0.06666666666666667,
+            "unit_label": "km/min",
+            "explanation": "2 ÷ 30 = 0.067 is in km/min; convert first (30 min = 0.5 h)."
+          }
+        ]
+      },
+      "probe_type": null,
+      "parent_item": null,
+      "stem_source": "template",
+      "template_stem": "Meena walks 2 km to school in 30 min. What is the average speed in km/h? (type a number)"
+    }
+  ]
+}

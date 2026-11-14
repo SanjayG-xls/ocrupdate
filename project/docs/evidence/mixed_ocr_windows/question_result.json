@@ -1,0 +1,136 @@
+{
+  "backend": "pix2tex (CPU, local)",
+  "blocks": [
+    {
+      "bbox": [
+        36.0,
+        34.0,
+        474.67,
+        30.0
+      ],
+      "column": 0,
+      "id": "block_0",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 0,
+      "text": "Question: A block has a mass of 4 kg."
+    },
+    {
+      "bbox": [
+        35.33,
+        84.0,
+        722.0,
+        30.0
+      ],
+      "column": 0,
+      "id": "block_1",
+      "kind": "text",
+      "ocr_confidence": 95.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 1,
+      "text": "The relationship between force, mass and acceleration is:"
+    },
+    {
+      "bbox": [
+        69.33,
+        158.0,
+        126.0,
+        32.0
+      ],
+      "column": 0,
+      "id": "block_2",
+      "kind": "math",
+      "latex": "P\\implies\\textstyle=\\textstyle{\\frac{}{}}\\gamma/{}y",
+      "ocr_confidence": 78.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.193,
+      "review_required": true,
+      "row": 2,
+      "text": "F=ma",
+      "warning": "Math draft differs from text OCR (F=ma). Compare the image; neither result is guaranteed correct."
+    },
+    {
+      "bbox": [
+        37.33,
+        248.67,
+        868.0,
+        30.67
+      ],
+      "column": 0,
+      "id": "block_3",
+      "kind": "text",
+      "ocr_confidence": 96.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 3,
+      "text": "Find the force when the acceleration is 3 metres per second squared."
+    },
+    {
+      "bbox": [
+        37.33,
+        318.67,
+        55.33,
+        30.67
+      ],
+      "column": 0,
+      "id": "block_4",
+      "kind": "text",
+      "ocr_confidence": 92.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 4,
+      "text": "Use"
+    },
+    {
+      "bbox": [
+        92.67,
+        318.67,
+        89.33,
+        30.67
+      ],
+      "column": 0,
+      "id": "block_5",
+      "kind": "math",
+      "latex": "\\mathbf{f}=\\mathbf{m}\\mathbf{a}",
+      "ocr_confidence": 92.0,
+      "reason": "math symbols or fraction layout",
+      "recognition_s": 0.145,
+      "review_required": true,
+      "row": 4,
+      "text": "F = ma",
+      "warning": "Math draft differs from text OCR (F = ma). Compare the image; neither result is guaranteed correct."
+    },
+    {
+      "bbox": [
+        182.0,
+        318.67,
+        521.33,
+        30.67
+      ],
+      "column": 0,
+      "id": "block_6",
+      "kind": "text",
+      "ocr_confidence": 92.0,
+      "reason": "text row",
+      "review_required": true,
+      "row": 4,
+      "text": "to calculate your answer. Show the units."
+    }
+  ],
+  "columns": 1,
+  "combined_text": "Question: A block has a mass of 4 kg.\nThe relationship between force, mass and acceleration is:\n$P\\implies\\textstyle=\\textstyle{\\frac{}{}}\\gamma/{}y$\nFind the force when the acceleration is 3 metres per second squared.\nUse $\\mathbf{f}=\\mathbf{m}\\mathbf{a}$ to calculate your answer. Show the units.",
+  "duration_s": 6.314,
+  "equation_candidates": 2,
+  "height": 460,
+  "model_load_s": 4.731,
+  "recognised_equations": 2,
+  "recognition_s": 0.357,
+  "review_required": true,
+  "warnings": [
+    "Automatic layout and equation recognition can miss or misclassify content. Review every block against the photo."
+  ],
+  "width": 1200
+}

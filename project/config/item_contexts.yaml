@@ -1,0 +1,70 @@
+# Context library for quantitative items. Python computes every answer from these
+# numbers; the LLM may only reword the stem. Contexts are chosen in order, so runs
+# are reproducible. Each formula needs at least 3 contexts (assessment, second chance,
+# transfer) and the transfer context should require a unit conversion.
+speed:
+  assessment:
+    - {actor: "A train", verb: "covers", a: [180, "km"], b: [3, "h"]}
+  second_chance:
+    - {actor: "A cyclist", verb: "rides", a: [24, "km"], b: [2, "h"]}
+  transfer:
+    - {actor: "Meena", verb: "walks", a: [2, "km"], b: [30, "min"], setting: "to school"}
+  relation_same_b:          # same time, different distance (assessment)
+    - {actors: ["bus X", "bus Y"], b: [1, "h"], a: [[50, "km"], [65, "km"]]}
+  relation_same_b_second:
+    - {actors: ["car P", "car Q"], b: [2, "h"], a: [[90, "km"], [70, "km"]]}
+  relation_same_a:          # same distance, different time (placement inference)
+    - {actors: ["Asha", "Ravi"], a: [10, "km"], b: [[30, "min"], [40, "min"]]}
+density:
+  assessment:
+    - {actor: "A metal block", verb: "has a mass of", a: [540, "g"], b: [200, "cm3"]}
+  second_chance:
+    - {actor: "A stone", verb: "has a mass of", a: [300, "g"], b: [120, "cm3"]}
+  transfer:
+    - {actor: "A wooden toy", verb: "has a mass of", a: [0.06, "kg"], b: [100, "cm3"]}
+  relation_same_b:
+    - {actors: ["block X", "block Y"], b: [100, "cm3"], a: [[250, "g"], [400, "g"]]}
+  relation_same_b_second:
+    - {actors: ["cube P", "cube Q"], b: [50, "cm3"], a: [[150, "g"], [100, "g"]]}
+  relation_same_a:
+    - {actors: ["sample A", "sample B"], a: [200, "g"], b: [[80, "cm3"], [100, "cm3"]]}
+# ---- live-round formula library extension (every answer is computed by Python)
+pressure:
+  assessment:
+    - {actor: "A box", verb: "pushes with a force of", a: [600, "N"], b: [2, "m2"]}
+  second_chance:
+    - {actor: "A crate", verb: "pushes with a force of", a: [500, "N"], b: [0.5, "m2"]}
+  transfer:
+    - {actor: "Ravi's school bag", verb: "pushes with a force of", a: [50, "N"], b: [200, "cm2"], setting: "on his shoulder"}
+  relation_same_b:
+    - {actors: ["block X", "block Y"], b: [1, "m2"], a: [[200, "N"], [350, "N"]]}
+  relation_same_b_second:
+    - {actors: ["box P", "box Q"], b: [2, "m2"], a: [[400, "N"], [300, "N"]]}
+  relation_same_a:
+    - {actors: ["shoe A", "shoe B"], a: [600, "N"], b: [[0.02, "m2"], [0.03, "m2"]]}
+resistance:
+  assessment:
+    - {actor: "A bulb", verb: "has a voltage of", a: [12, "V"], b: [2, "A"]}
+  second_chance:
+    - {actor: "A heater coil", verb: "has a voltage of", a: [9, "V"], b: [3, "A"]}
+  transfer:
+    - {actor: "Meena's torch bulb", verb: "has a voltage of", a: [6, "V"], b: [500, "mA"]}
+  relation_same_b:
+    - {actors: ["wire X", "wire Y"], b: [2, "A"], a: [[6, "V"], [10, "V"]]}
+  relation_same_b_second:
+    - {actors: ["resistor P", "resistor Q"], b: [1, "A"], a: [[9, "V"], [5, "V"]]}
+  relation_same_a:
+    - {actors: ["bulb A", "bulb B"], a: [12, "V"], b: [[2, "A"], [3, "A"]]}
+power:
+  assessment:
+    - {actor: "A motor", verb: "does", a: [600, "J"], b: [5, "s"]}
+  second_chance:
+    - {actor: "A pump", verb: "does", a: [900, "J"], b: [3, "s"]}
+  transfer:
+    - {actor: "Meena", verb: "does", a: [1.2, "kJ"], b: [1, "min"], setting: "climbing the stairs"}
+  relation_same_b:
+    - {actors: ["crane X", "crane Y"], b: [10, "s"], a: [[2000, "J"], [3000, "J"]]}
+  relation_same_b_second:
+    - {actors: ["lift P", "lift Q"], b: [5, "s"], a: [[1500, "J"], [1000, "J"]]}
+  relation_same_a:
+    - {actors: ["Asha", "Ravi"], a: [1200, "J"], b: [[20, "s"], [30, "s"]]}

@@ -1,0 +1,7 @@
+tests/integration/test_executorch_runtime.py::test_load_registers_custom_ops PASSED [ 16%]
+tests/integration/test_executorch_runtime.py::test_generate_reports_stats PASSED [ 33%]
+tests/integration/test_executorch_runtime.py::test_greedy_is_deterministic PASSED [ 50%]
+tests/integration/test_executorch_runtime.py::test_timeout_path_with_real_runner PASSED [ 66%]
+tests/integration/test_executorch_runtime.py::test_bad_file_is_runtime_unavailable PASSED [ 83%]
+tests/integration/test_executorch_runtime.py::test_noise_output_is_rejected_and_labelled PASSED [100%]
+========================= 6 passed, 1 warning in 8.86s =========================

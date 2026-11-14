@@ -1,0 +1,290 @@
+{
+  "run": {
+    "run_id": "expected_template",
+    "learner": "scripted answers (priya_answers.json)",
+    "backend": {
+      "requested_backend": "template",
+      "fallback_used": false,
+      "model_load_s": 0.0,
+      "backend": "template",
+      "is_llm": false
+    },
+    "is_llm_inference": false,
+    "llm_outputs_accepted": 0,
+    "explanation_sources": {
+      "summary": "template",
+      "l1": "template",
+      "l2": "template",
+      "l3": "original"
+    },
+    "timings": {
+      "t_preprocessing_s": 0.0022,
+      "t_model_generation_s": 0,
+      "t_validation_and_templates_s": 0.003,
+      "t_build_s": 0.0052,
+      "t_session_s": 0.0012,
+      "repair_latency": {
+        "n": 1,
+        "median_ms": 0.012,
+        "max_ms": 0.012
+      }
+    },
+    "peak_rss_mb": 23.3,
+    "passage_sha256": "0e3d9d0319d4299e41d3c6a430222d73836bed36ae5ac773c9c8f9065c6c01a1"
+  },
+  "placement": {
+    "score": 1,
+    "out_of": 3,
+    "start_rung": 1,
+    "rule": "R1: 0-1 -> L1, 2 -> L2, 3 -> L3",
+    "responses": [
+      {
+        "item_id": "P1",
+        "probe": "literal",
+        "correct": true,
+        "answer": "C"
+      },
+      {
+        "item_id": "P2",
+        "probe": "word_in_context",
+        "correct": false,
+        "answer": "A"
+      },
+      {
+        "item_id": "P3",
+        "probe": "inference",
+        "correct": false,
+        "answer": "B"
+      }
+    ],
+    "note": "Passage-specific starting point for support; not a diagnosis of reading proficiency."
+  },
+  "rung_path": [
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "end_reason": "bridge check completed",
+  "bridge_reached": true,
+  "concepts": [
+    {
+      "cid": "C1",
+      "label": "speed",
+      "knowledge_type": "definition",
+      "sids": [
+        "S2"
+      ],
+      "state": "Provisional",
+      "assessed": true,
+      "history": [
+        {
+          "item": "Q1",
+          "event": "correct_first",
+          "from": "Learning",
+          "to": "Provisional"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "cid": "C2",
+      "label": "odometer",
+      "knowledge_type": "definition",
+      "sids": [
+        "S10"
+      ],
+      "state": "Provisional",
+      "assessed": true,
+      "history": [
+        {
+          "item": "Q3",
+          "event": "correct_first",
+          "from": "Learning",
+          "to": "Provisional"
+        }
+      ],
+      "flags": [
+        "low certainty on Q3: reread S10"
+      ]
+    },
+    {
+      "cid": "C3",
+      "label": "speed = distance ÷ time",
+      "knowledge_type": "quantitative",
+      "sids": [
+        "S3"
+      ],
+      "state": "Transferred",
+      "assessed": true,
+      "history": [
+        {
+          "item": "Q2",
+          "event": "wrong_first",
+          "from": "Learning",
+          "to": "Fragile"
+        },
+        {
+          "item": "Q2b",
+          "event": "second_chance_correct",
+          "from": "Fragile",
+          "to": "Repaired"
+        },
+        {
+          "item": "T1",
+          "event": "transfer_correct",
+          "from": "Repaired",
+          "to": "Transferred"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "cid": "C4",
+      "label": "same time, greater distance -> higher speed",
+      "knowledge_type": "quantitative",
+      "sids": [
+        "S6"
+      ],
+      "state": "Provisional",
+      "assessed": true,
+      "history": [
+        {
+          "item": "Q4",
+          "event": "correct_first",
+          "from": "Learning",
+          "to": "Provisional"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "cid": "C5",
+      "label": "same distance, less time -> faster",
+      "knowledge_type": "quantitative",
+      "sids": [
+        "S7"
+      ],
+      "state": "Learning",
+      "assessed": false,
+      "history": [],
+      "flags": []
+    },
+    {
+      "cid": "C6",
+      "label": "speedometer",
+      "knowledge_type": "definition",
+      "sids": [
+        "S10"
+      ],
+      "state": "Learning",
+      "assessed": false,
+      "history": [],
+      "flags": []
+    },
+    {
+      "cid": "C7",
+      "label": "motion",
+      "knowledge_type": "definition",
+      "sids": [
+        "S1"
+      ],
+      "state": "Learning",
+      "assessed": false,
+      "history": [],
+      "flags": []
+    },
+    {
+      "cid": "C8",
+      "label": "we usually talk about average speed (because: Most vehicles do not move at a constant speed; they speed up and slow down along the way)",
+      "knowledge_type": "cause_effect",
+      "sids": [
+        "S8",
+        "S9"
+      ],
+      "state": "Learning",
+      "assessed": false,
+      "history": [],
+      "flags": []
+    }
+  ],
+  "scores": {
+    "assessment_credits": 25,
+    "assessment_max": 36,
+    "recovery_credits": 3,
+    "recovery_note": "recovery credits are outside the assessment maximum",
+    "total_earned": 28,
+    "cbm_total": 6,
+    "cbm_max": 18,
+    "scored_answers": 6,
+    "entries": [
+      {
+        "item_id": "Q1",
+        "kind": "assessment",
+        "cognitive_level": "recall",
+        "correct": true,
+        "certainty": 3,
+        "assessment_credits": 3,
+        "recovery_credits": 0,
+        "cbm": 3,
+        "max_assessment_credits": 3
+      },
+      {
+        "item_id": "Q2",
+        "kind": "assessment",
+        "cognitive_level": "apply",
+        "correct": false,
+        "certainty": 3,
+        "assessment_credits": 0,
+        "recovery_credits": 0,
+        "cbm": -6,
+        "max_assessment_credits": 9
+      },
+      {
+        "item_id": "Q2b",
+        "kind": "second_chance",
+        "cognitive_level": "apply",
+        "correct": true,
+        "certainty": 2,
+        "assessment_credits": 0,
+        "recovery_credits": 3,
+        "cbm": 2,
+        "max_assessment_credits": 0
+      },
+      {
+        "item_id": "Q3",
+        "kind": "assessment",
+        "cognitive_level": "recall",
+        "correct": true,
+        "certainty": 1,
+        "assessment_credits": 1,
+        "recovery_credits": 0,
+        "cbm": 1,
+        "max_assessment_credits": 3
+      },
+      {
+        "item_id": "Q4",
+        "kind": "assessment",
+        "cognitive_level": "apply",
+        "correct": true,
+        "certainty": 3,
+        "assessment_credits": 9,
+        "recovery_credits": 0,
+        "cbm": 3,
+        "max_assessment_credits": 9
+      },
+      {
+        "item_id": "T1",
+        "kind": "transfer",
+        "cognitive_level": "transfer",
+        "correct": true,
+        "certainty": 3,
+        "assessment_credits": 12,
+        "recovery_credits": 0,
+        "cbm": 3,
+        "max_assessment_credits": 12
+      }
+    ]
+  },
+  "teacher_notes": [],
+  "state_model_note": "Provisional = one correct assessment; Repaired is not mastery; Transferred is initial evidence only; Consolidated (multiple independent assessments) is proposed, not implemented."
+}

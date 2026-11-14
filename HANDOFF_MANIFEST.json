@@ -1,0 +1,22 @@
+{
+  "folder": "C:\\Users\\Sanjay\\Desktop\\Level_Bridge_RPi5_Tesseract_Handoff_2026-11-14",
+  "source_commit": "7c3d400f2110647276e31d7dc318ef9bef2bc952",
+  "source_repository": "https://github.com/SanjayG-xls/namma-ai-",
+  "tracked_files_copied": 194,
+  "bundled_models": [
+    "Qwen2.5-0.5B-Instruct-8da4w-gptq-2k.pte",
+    "tokenizer.json"
+  ],
+  "copy_adjustment": "ocr.camera_index changed from 1 (PC) to null (Pi autodetection); PC config unchanged",
+  "excluded": [
+    "Windows virtual environments",
+    "Git metadata",
+    "captured textbook photos",
+    "learner profiles and USB bundles",
+    "logs and runtime outputs",
+    "arm_int8_backup.pte (preserved on PC; not selected)",
+    "disabled experimental math-model weights"
+  ],
+  "verification_limit": "No Raspberry Pi, actual Qwen loading or ExecuTorch inference verified in this Windows session.",
+  "handoff_copy_tests": "221 passed, 11 skipped; handoff project root and UTF-8 mode, Windows; not Pi acceptance."
+}

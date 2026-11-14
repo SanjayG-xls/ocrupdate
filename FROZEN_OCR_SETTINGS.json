@@ -1,0 +1,13 @@
+{
+  "enabled": "true",
+  "camera_warmup_s": "1.5",
+  "confidence_threshold": "70",
+  "max_bytes": "12582912",
+  "max_pixels": "20000000",
+  "timeout_s": "45",
+  "orientation": "true",
+  "contrast": "true",
+  "threshold": "true",
+  "deskew": "true",
+  "math.enabled": "false"
+}

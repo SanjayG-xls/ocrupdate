@@ -1,0 +1,10 @@
+{
+  "project/models/Qwen2.5-0.5B-Instruct-8da4w-gptq-2k.pte": {
+    "bytes": 417495296,
+    "sha256": "dcd6a99816265a7257ee79d1740cbd9df09544ec061cc95b7278f8c5391cef18"
+  },
+  "project/models/tokenizer.json": {
+    "bytes": 7031645,
+    "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  }
+}

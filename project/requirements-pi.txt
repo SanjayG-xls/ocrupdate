@@ -1,0 +1,11 @@
+# Raspberry Pi 5 (64-bit Raspberry Pi OS, Python 3.10-3.13, aarch64) - model runtime.
+-r requirements.txt
+# ExecuTorch Python runtime incl. executorch.extension.llm.runner.TextLLMRunner.
+# A manylinux_2_28 aarch64 wheel exists for 1.4.0 (cp310-cp313). It pulls torch>=2.13, torchao,
+# pytorch-tokenizers and others as dependencies; scripts/install_dependencies.sh records the exact
+# resolved set with `pip freeze` into outputs/pip_freeze.txt.
+executorch==1.4.0
+# executorch/extension/llm/runner/__init__.py imports transformers.feature_extraction_utils.BatchFeature,
+# but transformers is not a declared dependency of the wheel. Verified importable with executorch 1.4.0 +
+# torch 2.15.0 on x86-64 Linux / Python 3.13; NOT yet verified on the Pi (aarch64).
+transformers==4.57.1

@@ -1,0 +1,13 @@
+{
+  "_note": "Hand-written stand-ins for model outputs used with ScriptedRuntime. These are NOT model outputs and are never reported as LLM inference.",
+  "good_summary": "Speed is the distance an object covers in a unit of time. Speed = distance ÷ time, measured in m/s or km/h. A speedometer shows speed at that moment, an odometer measures total distance, and we usually talk about average speed.",
+  "good_l2": "Speed is the distance an object covers in a unit of time. Speed = distance ÷ time, and it is measured in m/s or km/h. A bus that covers 120 km in 2 h has an average speed of 60 km/h. If the time is the same, more distance means higher speed. If the distance is the same, less time means faster. A speedometer shows speed at that moment, and an odometer measures the total distance.",
+  "missing_terms_l2": "Speed is how fast something goes. Speed = distance ÷ time. A bus that covers 120 km in 2 h has a speed of 60 km/h.",
+  "wrong_formula_l2": "Speed is the distance an object covers in a unit of time. Speed = time ÷ distance, measured in m/s or km/h. A bus covers 120 km in 2 h, so its average speed is 60 km/h. A speedometer shows speed at that moment and an odometer measures total distance.",
+  "wrong_number_l2": "Speed is the distance an object covers in a unit of time. Speed = distance ÷ time, in m/s or km/h. A bus that covers 120 km in 2 h has an average speed of 75 km/h. A speedometer shows speed at that moment and an odometer measures total distance.",
+  "wrong_unit_l2": "Speed is the distance an object covers in a unit of time. Speed = distance ÷ time, in m/s or km/h. A bus that covers 120 km in 2 h has an average speed of 60 m/s. A speedometer shows speed at that moment and an odometer measures total distance.",
+  "reversed_relation_l2": "Speed is the distance an object covers in a unit of time. Speed = distance ÷ time, in m/s or km/h. A bus that covers 120 km in 2 h has an average speed of 60 km/h. If two vehicles cover the same distance, the one that takes more time is faster. A speedometer shows speed at that moment and an odometer measures total distance.",
+  "unsupported_l2": "Speed is the distance an object covers in a unit of time. Speed = distance ÷ time, in m/s or km/h. A bus that covers 120 km in 2 h has an average speed of 60 km/h. Light travels through vacuum faster than any rocket, cheetah or aeroplane. A speedometer shows speed at that moment and an odometer measures total distance.",
+  "malformed": "<|im_start|>assistant\n<|im_start|>",
+  "empty": ""
+}
